@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => (
     <Seo title="Home" />
     <div>
       <h1>Erick's thoughts</h1>
-      <h4>{data.allMarkdownRemark.totalCount}</h4>
+      <h4>Posts: {data.allMarkdownRemark.totalCount}</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => {
         console.log(node)
         return (
